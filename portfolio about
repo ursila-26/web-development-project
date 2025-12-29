@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Ursila</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: rgb(1, 1, 46);
+        color: white;
+    }
+    div {
+        margin: 100px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    background-color: rgb(7, 7, 32);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: rgb(231, 6, 6);
+    font-size: 19px;
+}
+.left {
+    font-size: 24px;
+    font-weight: bold;
+}
+#1 {
+width: 300px;
+
+}
+#2 {
+width: 300px;
+}
+#3 {
+width: 300px;
+}
+h1 {
+    font-size: 60px;
+    color: rgb(2, 6, 54);
+    text-align: center;
+    padding: 50px;
+}
+.sec1 div {
+    background-image: url('https://wallpapers.com/images/hd/cute-light-blue-dxwjtmafuan4b4xi.jpg');
+    background-size: fill;
+   width: 100%;
+   height: 200px;
+   margin: 0;
+}
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">ursila's portfolio</div>
+            <div class="right">
+                <ul>
+                  <li><a href="portfolio.html"> Home</a></li>
+                   <li><a href="about.html"> About</a></li>
+                    <li><a href="skills.html"> skills </a></li>
+                    <li><a href="contact.html"> Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="sec1">
+    <div>
+        <h1>About Ursila</h1>
+       </section>
+       
+       <section class="sec2">
+        <div>
+            <p id="1">I am a passionate web developer, digital marketer, and video editor with a strong background in creating engaging content and building effective online strategies.</p>
+        </div>
+        <div>  
+             <p id="2">With experience in HTML, CSS, JavaScript, and various digital marketing tools, I strive to deliver high-quality work that meets client needs and exceeds expectations.</p>
+       </div>
+       <div>
+             <p id="3">In addition to my technical skills, I am a creative thinker and problem solver, always looking for innovative ways to approach challenges and deliver results.</p>   
+       </div>
+    </section>
+</body>
+</html>
