@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>questions html</title>
+</head>
+<style>
+  *{
+        margin: 0;
+        padding: 0;
+    }
+    .basic, .intermidiate{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(230, 230, 250);
+    }
+    .basic  h1{
+        text-align: center;
+    }
+    .ans1{
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: flex;
+    }
+.ans1 p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-right: 50px;
+    }
+    .ans2{
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 20px;
+        display: flex;
+    }
+.ans1 p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-right: 50px;
+    }
+    .ans2{
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 20px;
+        display: flex;
+    }
+.ul,.ol,.btn{
+    margin-left: 50px;
+}
+.ans3{
+    background-color: black;
+}
+table {
+     border-collapse: collapse;
+     width: 50%;
+     margin: 20px auto;
+     color: #ffffff;
+}
+
+th, td {
+     border: 2px solid #ffffff;
+     padding: 10px;
+     text-align: center;
+}
+th{
+    background-color: rgba(175, 91, 52, 0.822);
+}
+.ans11 {
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.ans22{
+background-color: #000;
+}
+.form-container {
+    width: 300px;
+    margin: 50px auto;
+     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    background-color: rgb(29, 29, 29);
+}
+.left {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: rgb(231, 6, 231);
+    font-size: 19px;
+}
+
+
+    
+
+
+
+    header {
+        background-image: url(https://jauzofficial.com/s/Jauz_SS_Header.jpg);
+         width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+    nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: transparent;
+    }
+    nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: rgb(231, 6, 6);
+    font-size: 19px;
+}
+nav img{
+    width: 100px; 
+     height: 80px; 
+}
+.sec1{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color :rgb(255, 255, 255);
+    padding-bottom : 80px;
+}
+.sec1 h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.sec1 h3{
+    font-size: 30px;
+}
+img{
+    width: 350px;
+    height:350px;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+        padding: 10px 20px;
+        font-size: 25px;;
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        border-radius: 20px;
+        margin-top: 20px;
+}
+.sec1 h3{
+    text-align: center;
+    font-size: 30px;
+}
+.sec2{
+    background-image: url(https://img.freepik.com/free-photo/glowing-stage-light-illuminates-cheering-rock-fans-generated-by-ai_188544-37983.jpg?semt=ais_hybrid&w=740&q=80);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.video{
+    padding-top: 50px;
+}
+
+footer{
+    background-color: #000;
+}
+.footerflex{
+    display: flex;
+}
+button,.email{
+    padding: 10px 20px;
+        font-size: 10px;;
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        border-radius: 0;
+}
+.follow{
+    display: flex;
+   margin-top: 150px;
+}
+footer img{
+    width: 350px;
+    height: 300px;
+    margin-left: 50px;
+    padding-bottom:100px ;
+}
+
+
+</style>
+<body>
+  <section class="basic">
+   <div class="question1">
+    <h1>level-1</h1>
+    <h3>Question:1</h3>
+    <p>Create an HTML page that displays your name as a heading.
+     Add three paragraphs describing yourself.
+     Insert an image of your choice (any online image link).<br>
+     Add a clickable link to your favorite website.
+    </p>
+   </div>
+   <div class="ans1">
+         <div>
+              <h3>Answer:</h3>
+              <h1>Ursila</h1>
+              <p>Hello! My name is Ursila, and I am a passionate web developer with a keen interest <br>
+                 in creating beautiful and functional websites.I have a background in computer science. <br>
+                 I love learning new technologies and improving my skills.In my free time, I enjoy <br>
+                  reading tech blogs, experimenting with new coding techniques, and contributing to <br>
+                  open-source projects.</p>
+         </div>
+         <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSP-b6gHyNpY63kSr9VQCg8eMxlYjOqc003A&s" >
+         </div>
+   </div>
+
+
+   <div class="question2">
+    <h3>Question:2</h3>
+    <p>Create an ordered list of your 5 favorite foods. <br>
+    Create an unordered list of your hobbies.</p>
+   </div>
+   <div class="ans2">
+    <h3>Answer:</h3> 
+      <div class="ol">
+          <h4>My 5 Favorite Foods:</h4>
+         <ol>
+          <li>Pizza</li>
+          <li>Sushi</li>
+          <li>Biryani</li>
+          <li>Ice Cream</li>
+          <li>Chocolate Cake</li>
+         </ol>
+      </div>
+      <div class="ul">
+          <h4>My Hobbies:</h4>
+         <ul>
+           <li>Reading</li>
+           <li>Coding</li>
+           <li>Traveling</li>
+           <li>Photography</li>
+           <li>Cooking</li>
+         </ul>
+       </div>
+       <div class="btn">
+       <a href="https://banoqabil.pk/"><button>Fravoite website</button></a> 
+       </div>
+    </div>
+
+    <div class="question3">
+        <h3>question3</h3>
+        <p>Create a table with 3 rows and 3 columns (Name, Class, Roll Number).</p>
+    </div>
+    <div class="ans3">
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+            <td>Sana</td>
+            <td>8A</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td>Rida</td>
+            <td>8A</td>
+            <td>02</td>
+        </tr>
+        <tr>
+            <td>Jaweria</td>
+            <td>8A</td>
+            <td>03</td>
+        </tr>
+    </table>
+
+    </div>
+  </section>  
+
+
+  <section class="intermidiate">
+     <div class="question11">
+        <h4>question1</h4>
+     <p>Create a registration form with:
+Name,Email, Phone, Password, Submit button</p>
+     </div>
+     <div class="ans11">
+        <h2>Register</h2>
+        <form>
+          <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+
+            <button type="submit">Submit</button>
+        </form>
+
+     </div>
+    <div class="question22">
+      <h3>question2</h3>
+      <p>Create a navigation bar using nav and add links: Home, About, Contact.</p>
+    </div>
+     <div class="ans22">
+        <nav>
+            <div class="left">nav</div>
+            <div class="right">
+                <ul>
+                  <li><a href="/"> Home</a></li>
+                   <li><a href="/"> About</a></li>
+                    <li><a href="/"> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+     </div>
+
+
+
+
+
+     <div class="question33">
+        <h3>question3</h3>
+        <p>Create a webpage with 3 sections: Header, Main Content, Footer. <br>
+Embed a YouTube video in your webpage. <br>
+Add a background image on your webpage. <br>
+</p>
+     </div>
+     <div class="ans33">
+     <header>
+         <nav>
+                  <img src=" https://images.squarespace-cdn.com/content/v1/59cbd746c534a53adca1622a/1567014788705-FFQUZ1AI037W87HFFFRA/Jauz.png?format=500w" alt="">
+                <ul>
+                  <li><a href="/"> MUSIC</a></li>
+                   <li><a href="/"> VIDEO</a></li>
+                    <li><a href="/"> TOUR</a></li>
+                    <li><a href="/"> TWICH</a></li>
+                    <li><a href="/"> SHOP</a></li>
+                </ul>
+         </nav>
+      </header>        
+
+     </div>
+       <section>
+        <div class="sec1">
+            <h1>MUSIC</h1>
+          <div class="images"> 
+            <div class="img1">
+                <img src="https://images.squarespace-cdn.com/content/v1/59cbd746c534a53adca1622a/c306f5f7-c8f4-4569-9c7b-2404347d0c27/DLYH-coveridea-final.jpg?format=500w" alt="">
+                 <h3>DON’T LOSE YOUR HEAD</h3>
+                 <button>  LISTEN</button>
+            </div>
+
+            <div class="img2">
+                <img src="https://images.squarespace-cdn.com/content/v1/59cbd746c534a53adca1622a/627e4fe9-d283-4be2-940e-c465394e3908/jauz_chains_final.jpg?format=500w" alt="">
+                 <h3>CHAINS</h3>
+                 <button>  LISTEN</button>
+            </div>
+
+            <div class="img3">
+                <img src="https://images.squarespace-cdn.com/content/v1/59cbd746c534a53adca1622a/ef351b70-ed52-4fc1-aef7-c3da94e48a8c/Jauz+-+Higher+For+Your+Love+%5BART%5D.jpg?format=500w" alt="">
+                 <h3>HIGHER FOR YOUR LOVE</h3>
+                 <button>  LISTEN</button>
+            </div>
+    </div>
+        </div>
+        </section> 
+        
+        <section  class="sec2">
+            <h1>VIDEOS</h1>
+          <div class="video">
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/jf2G6D-i-eU?si=N2g0ywyPX-ikZYou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+
+            <footer>
+            <div class="footerflex">
+            <div class="image">
+                <img src="https://images.squarespace-cdn.com/content/v1/59cbd746c534a53adca1622a/1567014788705-FFQUZ1AI037W87HFFFRA/Jauz.png?format=500w" alt="">
+            </div>
+            <div class="follow">
+                <h1>FOLLOW JAUZ</h1>
+                <form >
+                    <input class="email" type="text"placeholder="EMAIL ADDRESS">
+                    <button>FOLLOW</button>
+                </form>
+            </div>
+            </div>
+            <div class="navbar">
+                 <nav>
+                <ul>
+                  <li><a href="/"> CONTACT</a></li>
+                   <li><a href="/"> PRIVACY</a></li>
+                    <li><a href="/"> TERMS OF SERVICES</a></li>
+                </ul>
+       </nav>
+            </div>
+        </footer>
+    
+  </section>
+    
+ 
+  
+</body>
+</html>
