@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>form</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  height: 600px;
+  background-image: url('data:image/jpeg;base64,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');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.466);
+  padding: 30px;
+  width: 400px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.options a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  color: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eee;
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.register a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+</style>
+<body>
+    <section>
+        <div class="login-box">
+    <h2>Login</h2>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <div class="options">
+      <label>
+        <input type="checkbox"> Remember me
+      </label>
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <button>Login</button>
+
+    <p class="register">
+      Don't have an account? <a href="#">Register</a>
+    </p>
+  </div>
+    </section>
+</body>
+</html>
