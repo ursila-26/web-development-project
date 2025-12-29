@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        background-image: url(https://images.unsplash.com/photo-1476842634003-7dcca8f832de?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMHBsYW50fGVufDB8fDB8fHww);
+         width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+    h3{
+     color:rgb(126, 126, 126) ;
+        padding-top: 130px;
+        padding-left: 80px;
+        font-size: 10px;
+    }
+    h1{font-size: 40px;
+        padding-left: 80px;
+        padding-top: 0px;
+    
+    }
+ button{
+        margin-left: 80px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 10px;;
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+.menu-toggle {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menu-text {
+  color: #00ff88;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  margin: 6px 0;
+  transition: 0.3s ease;
+}
+.menu-toggle:hover .hamburger span {
+  background: #00ff88;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    top: 20px;
+    right: 20px;
+  }
+}
+header img{
+    margin: 20px;
+  height: 30px;
+  width: 80px;
+}
+
+
+
+.hero {
+  text-align: center;
+  padding-top: 40px;;
+ width: 100%;
+ height: auto;
+   background: #00b44b;
+  color: white;
+  padding-bottom: 50px;
+  
+}
+
+.hero h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.hero hr {
+  width: 80px;
+  margin: 20px auto;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 60px;
+  color: #eafff3;
+
+
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stat {
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+.stat h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.stat span {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #d7ffe9;
+}
+
+
+.hero2{
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.hero2 h1{
+    font-size: 70px;
+}
+.boxes{
+     display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+  }
+.box1, .box2, .box3 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;  
+    text-align: left;
+    
+}
+.box1 h1, .box2 h1, .box3 h1{
+    font-size: 30px;
+}
+.box1 p, .box2 p, .box3 p{
+   color: gray;
+}
+.left {
+    width: 50%;
+}
+.right {
+    width: 50%;
+}
+.black{
+    background-color: black;
+    width: auto;
+    height: 400px;
+   color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+.black h5{
+ color:#00c853;
+}
+.images {
+  padding-top: 90px;
+    padding-bottom: 120px;
+}
+.img1,.img2,.img3{
+    display: flex;
+}
+.imga{
+    width: 600px;
+    height: 650px;
+}
+.imgf{
+    width: 600px;
+    height: 650px;
+}
+.contactus{
+  background-image: url(https://img.freepik.com/premium-photo/highresolution-stone-wall-texture-background_640734-434.jpg?semt=ais_hybrid&w=740&q=80);
+   width: 100%;
+  padding: 80px 0;
+  position: relative;
+   height:auto ;
+   text-align: center;
+   color: white;
+   margin-top:2000px;
+}
+.contactus h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.contactus h5{
+  color: #00c853;
+  padding-bottom:0px;
+  font-size: 20px;
+}
+.contact {
+  padding: 60px 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background: #121212;
+}
+.form-box {
+  flex: 2;
+  padding: 40px;
+}
+.form-box h3 {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+form input,
+form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 12px 0;
+  margin-bottom: 25px;
+  color: #fff;
+}
+form textarea {
+  resize: none;
+  height: 100px;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #777;
+}
+.btnf {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #00c853;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btnf:hover {
+  background: #00b14f;
+}
+.info-box {
+  flex: 1;
+  padding: 40px;
+  background: #0b0b0b;
+}
+.info-box h3 {
+  margin-bottom: 30px;
+}
+.info h4 {
+  color: #00c853;
+  margin: 20px 0 10px;
+}
+.info p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #121212;
+    color: white;
+    padding: 50px;
+}
+.f1 h1{
+    font-size: 40px;
+  color: #00c853;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 10px;;
+    background-color: #00c853;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+    </style>
+
+<body>
+    <header>
+        <img src="https://preview.colorlib.com/theme/glint/images/logo.png" alt="">
+<h3>WELCOME TO GLINT </h3>
+<h1>We are a creative group <br>of people who design <br>influential brands and <br>digital experiences.</h1>   
+<button>START A PROJECT</button>
+<button>MORE ABOUT US</button>
+
+<div class="menu-toggle" id="menuToggle">
+  <span class="menu-text">MENU</span>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+    </header>
+
+<section class="hero">
+    <h1>We Are Glint</h1>
+      <p>_________________________________________________________________________</p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse <br>
+      cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <h2>127</h2>
+        <span>Awards Received</span>
+      </div>
+      <div class="stat">
+        <h2>1505</h2>
+        <span>Cups of Coffee</span>
+      </div>
+      <div class="stat">
+        <h2>109</h2>
+        <span>Projects Completed</span>
+      </div>
+      <div class="stat">
+        <h2>102</h2>
+        <span>Happy Clients</span>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="hero2">
+  <div>
+    <h1>We’ve got everything you need to <br> launch and grow your business</h1>
+    <p>_________________________________________________________________________</p>
+  </div>
+<div class="box1">
+  <div class="left">
+    <h1>Brand Identity</h1>
+    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>
+       Earum suscipit ipsum laudantium. Quo delectus est. <br>
+        Maiores voluptas ab sit natus veritatis ut. Debitis nulla <br>
+         cumque veritatis. Sunt suscipit voluptas ipsa in tempora <br>
+          esse soluta sint.</p>
+  </div>
+  <div class="right">
+    <h1>Illustration</h1>
+    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>
+       Earum suscipit ipsum laudantium. Quo delectus est. <br>
+        Maiores voluptas ab sit natus veritatis ut. Debitis nulla <br>
+         cumque veritatis. Sunt suscipit voluptas ipsa in tempora <br>
+          esse soluta sint.</p>
+  </div>
+</div>
+
+<div class="box2">
+  <div class="left">
+    <h1>Marketing</h1>
+    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>
+       Earum suscipit ipsum laudantium. Quo delectus est. <br>
+        Maiores voluptas ab sit natus veritatis ut. Debitis nulla <br>
+         cumque veritatis. Sunt suscipit voluptas ipsa in tempora <br>
+          esse soluta sint.</p>
+  </div>
+  <div class="right">
+    <h1>Web Design</h1>
+    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>
+       Earum suscipit ipsum laudantium. Quo delectus est. <br>
+        Maiores voluptas ab sit natus veritatis ut. Debitis nulla <br>
+         cumque veritatis. Sunt suscipit voluptas ipsa in tempora <br>
+          esse soluta sint.</p>
+  </div>
+</div>
+
+<div class="box3">
+  <div class="left">
+    <h1>Packaging Design</h1>
+    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>
+       Earum suscipit ipsum laudantium. Quo delectus est. <br>
+        Maiores voluptas ab sit natus veritatis ut. Debitis nulla <br>
+         cumque veritatis. Sunt suscipit voluptas ipsa in tempora <br>
+          esse soluta sint.</p>
+  </div>
+  <div class="right">
+    <h1>Web Development</h1>
+    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>
+       Earum suscipit ipsum laudantium. Quo delectus est. <br>
+        Maiores voluptas ab sit natus veritatis ut. Debitis nulla <br>
+         cumque veritatis. Sunt suscipit voluptas ipsa in tempora <br>
+          esse soluta sint.</p>
+  </div>
+</div>
+</section>
+
+
+<section class="black">
+  <h5>RECENT WORKS</h5>
+  <h1>We love what we do, <br>
+     check out some of our latest works</h1>
+  <hr>
+    <div class ="images">
+        <div class="img1">
+        <img class="imga" src="https://preview.colorlib.com/theme/glint/images/portfolio/lady-shutterbug.jpg" alt="">
+        <img class="imgb" src="https://preview.colorlib.com/theme/glint/images/portfolio/woodcraft.jpg" alt="">
+        </div>
+
+        <div class="img2">
+        <img class="imgc" src="https://preview.colorlib.com/theme/glint/images/portfolio/the-beetle.jpg" alt="">
+        <img class="imgd" src="https://preview.colorlib.com/theme/glint/images/portfolio/grow-green.jpg" alt="">
+        </div>
+
+         <div class="img3">
+        <img class="imge" src="https://preview.colorlib.com/theme/glint/images/portfolio/guitarist.jpg" alt="">
+        <img class="imgf" src="https://preview.colorlib.com/theme/glint/images/portfolio/palmeira.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+<br>
+<section class="contactus"> 
+  <h5>Contact us</h5>
+  <h1>Reach out for a new project or just <br> say hello</h1>
+
+  <div class="contact">
+    <div class="container">
+       <div class="form-box">
+         <h3>SEND US A MESSAGE</h3>
+
+       <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message"></textarea>
+
+        <button class="btnf" type="submit"> SUBMIT </button>
+      </form>
+    </div>
+
+    <div class="info-box">
+      <h3>CONTACT INFO</h3>
+
+      <div class="info">
+        <h4>Where to Find Us</h4>
+        <p>1600 Amphitheatre Parkway<br>
+           Mountain View, CA<br>
+           94043 US</p>
+
+        <h4>Email Us At</h4>
+        <p>contact@glintsite.com<br>
+           info@glintsite.com</p>
+
+        <h4>Call Us At</h4>
+        <p>Phone: (+63) 555 1212<br>
+           Mobile: (+63) 555 0100</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+    <div class="f1">
+      <h1>Glint.</h1>
+      <p>Proin eget tortor risus. Mauris blandit aliquet elit, <br>
+         eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis <br>
+          a pellentesque nec, egestas non nisi. Mauris blandit <br>
+           aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor <br>
+            accumsan tincidunt. Nulla porttitor accumsan tincidunt. <br>
+            Quaerat voluptas autem necessitatibus vitae aut.</p>
+    </div>
+
+    <div class="f2">
+      <h4>Get Notified</h4>
+      <p>Quia quo qui sed odit. Quaerat voluptas autem <br>
+        necessitatibus vitae aut non alias sed <br>
+        quia. Ut itaque enim optio ut <br>
+        excepturi deserunt iusto porro.</p>
+        <form action="">
+         <input type="email" placeholder="Email Address">
+          <button class="btn" type="submit"> SUBSCRIBE </button>
+        </form>
+    </div>
+</footer>
+
+</body>
+</html>
