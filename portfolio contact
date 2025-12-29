@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact me</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+      body {
+        background-color: rgb(1, 1, 46);
+        color: white;
+    }
+    
+    nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    background-color: rgb(7, 7, 32);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: rgb(231, 6, 6);
+    font-size: 19px;
+}
+.left {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.form-container {
+    background-color: #8eb8b8;
+    padding: 30px;
+    width: 320px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #332727;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 14px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #000000;
+}
+
+form textarea {
+    resize: none;
+    height: 70px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+button {
+    background-color: #fff;
+    color: #224d61;
+    border: none;
+    padding: 8px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    background-color: #000000;
+}
+section {
+    background-image:url(https://img.freepik.com/premium-vector/contact-us-customer-support-hotline-connect-concept-call-center-service-provider-advice-customer-help-support-services-are-digital-dark-blue-background_387612-698.jpg);
+    background-position: center;
+ background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.form-container {
+    position: relative;
+    top: 80px;
+    left: 70px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">ursila's portfolio</div>
+            <div class="right">
+                <ul>
+                  <li><a href="portfolio.html"> Home</a></li>
+                   <li><a href="about.html"> About</a></li>
+                    <li><a href="skills.html"> skills </a></li>
+                    <li><a href="contact.html"> Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+    <div class="form-container">
+    <form>
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email address" required>
+        <input type="text" placeholder="Your budget (Optional)">
+        <textarea placeholder="Your project description"></textarea>
+
+        <button type="submit">SEND</button>
+    </form>
+</div>
+</section>
+</body>
+</html>
