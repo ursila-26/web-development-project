@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>question css</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(255, 175, 213);
+    }
+    .question{
+        background-color: rgba(15, 15, 15, 0.384);
+        color: aliceblue;
+    }
+    .question h1{
+        text-align: center;
+    }
+    .ans1{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .ans1 h3{
+        font-size:60px ;
+        color: rgb(77, 0, 60);
+         padding: 10px;
+    }
+  .ans1 p{
+        font-size:20px ;
+        color: rgb(27, 25, 27);
+        padding: 10px;
+    }
+    table {
+     border-collapse: collapse;
+     width: 50%;
+     margin: 20px auto;
+     color: #410505;
+}
+
+th, td {
+     border: 2px solid #000000;
+     padding: 10px;
+     text-align: center;
+}
+th{
+    background-color: rgba(156, 95, 67, 0.822);
+}
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.ans11{
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.dis{
+    display: flex;
+}
+.ans111 {
+  display: flex; 
+  gap: 16px;              
+}
+.column {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+.left,
+.right {
+  flex: 1;
+}
+</style>
+<body>
+     <section class="basic">
+       <div class="question">
+        <h1>CSS level-1</h1>
+    <h3>Question:1</h3>
+    <p>Change the background color of your webpage. <br>
+Change the font color and font size of headings and paragraphs. <br>
+Apply padding and margin to a box or div. 
+    </p>
+       </div>
+       <div class="ans1">
+        <div class="html">
+        <h3>HTML</h3>
+        <P> (HyperText Markup Language) is the standard markup language for creating the <br>
+            structure and content of web pages. CSS (Cascading Style Sheets) is a stylesheet  <br>
+            language used to control the presentation and visual appearance (styling and layout) <br>
+             of the content defined in HTML</P>
+         </div>
+         <div class="css">
+        <h3>CSS</h3>
+        <p>(Cascading Style Sheets) CSS takes the raw structure provided by HTML and adds the <br>
+            visual design, determining how the elements are displayed on screen, <br>
+            paper, or other media. </p>
+       </div>
+    </div>
+    
+     <div class="question">
+    <h3>Question:2</h3>
+    <p>Add borders to your table.</p>
+       </div>
+       <div class="ans2">
+              <table>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+            <td>Sana</td>
+            <td>8A</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td>Rida</td>
+            <td>8A</td>
+            <td>02</td>
+        </tr>
+        <tr>
+            <td>Jaweria</td>
+            <td>8A</td>
+            <td>03</td>
+        </tr>
+    </table>
+       </div>
+  </section>
+
+   
+  <section class="intermidiate">
+    <div class="question">
+        <h1>level-2</h1>
+        <h3>Question 1</h3>
+        <p>Create a box with: <br>
+width: 300px, height: 200px, background-color: lightblue, border-radius: 10px, Center a heading using CSS.
+Create a hover effect on a button. <br>
+Make an image round using border-radius: 50%. <br>
+
+</p>
+   </div>
+<div class="dis">
+    <div class="ans11">
+        <h1>PROGRAMMING</h1>
+        <p> programming, is the process of writing instructions (code) in a specific language that computers understand to perform tasks, creating everything from websites and apps to complex software, by defining logic, data handling, and user interactions, often involving building projects, using data structures, and debugging for a systematic, consistent learning approach. </p>
+    <button>LEARN MORE</button>
+    </div>
+    <div class="img">
+    <img src="https://img.freepik.com/free-vector/gradient-coding-logo-template_23-2148809439.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+
+    </div>
+    </div>
+  </section>
+
+  <section class="layout">
+    <div class="question">
+     <h1>level-3</h1>
+     <h3>Question 1</h3>
+     <p>Create a 2-column layout using CSS Flexbox.</p>
+    </div>
+    <div class="ans111">
+  <div class="column left">
+   <h2>Compiler</h2>
+   <ol>
+<li>Translation: Translates the whole program at once into an intermediate object code/machine code. </li>
+<li>Execution: Faster, as translation happens beforehand, producing a native executable. </li>
+<li>Error Handling: Reports all syntax errors after scanning the entire code.</li>
+<li>Portability: Less portable; compiled code is specific to the target machine architecture. </li>
+<li>Examples: C, C++, Rust. </li>
+</ol>
+  </div>
+  <div class="column right">
+ <h2>Interpreter</h2>
+<ol>
+    <li>Translation: Translates and executes one line or statement at a time.</li>
+    <li>Execution: Slower, as translation and execution overlap.</li>
+    <li>Error Handling: Reports errors line-by-line as they are encountered.</li>
+    <li>Portability: Highly portable; the same source code runs on any system with the interpreter.</li>
+    <li>Examples: Python, JavaScript, Ruby (though Python uses bytecode too)</li>
+</ol>
+  </div>
+
+    </div>
+
+  </section>
+</body>
+</html>
