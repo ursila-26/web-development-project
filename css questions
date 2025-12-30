@@ -56,15 +56,23 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: 25px;
+}
+button:hover{
+    background: red;
 }
 .ans11{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
     margin-left: 20%;
     margin-top: 20px;
+    background-color: lightblue;
+    border-radius: 10px ;
+    border-color: #000000;
+    border: #000000 solid;
 }
-img{
+.dis img{
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -73,10 +81,14 @@ img{
 }
 .dis{
     display: flex;
+    height: 350px;
 }
 .ans111 {
   display: flex; 
   gap: 16px;              
+}
+.ans11 h1{
+text-align: center;
 }
 .column {
   padding: 20px;
@@ -87,6 +99,72 @@ img{
 .right {
   flex: 1;
 }
+.ans222{
+     margin-top: 20px;
+     margin-bottom: 30px;
+     margin-left: 30%;
+     
+}
+.card {
+    width: 400px;
+    height: 200px;
+    background: #fffebe;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.384);
+    align-items: center;
+  }
+  .card h2 {
+    margin-top: 20;
+  }
+ .card p {
+    margin-top: 15px;
+    color: #020202;
+  }
+  .ans333{
+    padding: 10px;
+    height: 100px;
+  }
+  nav {
+    background-color: #3a3a3a;
+    margin-top: 26px;
+    padding: 12px 24px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: #d10000;
+  }
+  
+.ans444 {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    height: 100px;
+}
+.box {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+    .ans444 {
+      flex-direction: column;
+}}
 </style>
 <body>
      <section class="basic">
@@ -101,15 +179,15 @@ Apply padding and margin to a box or div.
        <div class="ans1">
         <div class="html">
         <h3>HTML</h3>
-        <P> (HyperText Markup Language) is the standard markup language for creating the <br>
-            structure and content of web pages. CSS (Cascading Style Sheets) is a stylesheet  <br>
-            language used to control the presentation and visual appearance (styling and layout) <br>
+        <P> (HyperText Markup Language) is the standard markup language for creating the 
+            structure and content of web pages. CSS (Cascading Style Sheets) is a stylesheet 
+            language used to control the presentation and visual appearance (styling and layout) 
              of the content defined in HTML</P>
          </div>
          <div class="css">
         <h3>CSS</h3>
-        <p>(Cascading Style Sheets) CSS takes the raw structure provided by HTML and adds the <br>
-            visual design, determining how the elements are displayed on screen, <br>
+        <p>(Cascading Style Sheets) CSS takes the raw structure provided by HTML and adds the 
+            visual design, determining how the elements are displayed on screen, 
             paper, or other media. </p>
        </div>
     </div>
@@ -196,7 +274,42 @@ Make an image round using border-radius: 50%. <br>
     <li>Examples: Python, JavaScript, Ruby (though Python uses bytecode too)</li>
 </ol>
   </div>
+     </div>
 
+      <div class="question">
+     <h3>Question 2</h3>
+     <p>Create a simple card design with shadow using box-shadow.</p>
+    </div>
+    <div class="ans222">
+         <div class="card">
+       <h2>HAPPY BIRTHDAY</h2>
+       <p>Happy birthday! I hope you have a special day today!</p>
+      </div>
+     </div> 
+
+     <div class="question">
+     <h3>Question 3</h3>
+     <p>Create a simple card design with shadow using box-shadow.</p>
+    </div>
+    <div class="ans333">
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="question">
+     <h3>Question 4</h3>
+     <p>Make a responsive layout using media queries (mobile view: column layout).</p>
+    </div>
+    <div class="ans444">
+               <div class="box">Content 1</div>
+               <div class="box">Content 2</div>
+               <div class="box">Content 3</div>
     </div>
 
   </section>
